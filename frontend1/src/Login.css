@@ -1,0 +1,228 @@
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #000000; /* Black background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+  
+  /* Navbar Brand Text Styling */
+  .custom-navbar .navbar-brand {
+    color: white !important; /* White text */
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .custom-navbar .navbar-brand:hover {
+    color: #FF6A13 !important; /* Orange hover effect */
+    transition: color 0.3s ease;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767px) {
+    .custom-navbar .navbar-brand {
+      font-size: 1.4rem;
+    }
+  
+    .navbar-logo {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  /* Background Image Styles */
+  .background-image {
+    position: fixed; /* Fixed positioning for a full-screen background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centering the image */
+    z-index: -1; /* Keeps the background behind other elements */
+    object-fit: cover; /* Ensures proper image scaling */
+  }
+  
+  /* Optional: Add media query for mobile screens to ensure background doesn't get distorted */
+  @media (max-width: 767px) {
+    .background-image {
+      background-position: top center; /* Adjust position for smaller screens */
+    }
+  }
+  
+  /* Login/Signup Form Styles */
+  /* Login/Signup Form Styles */
+  .login_signup_form {
+    background-color: rgba(255, 255, 255, 0.95); /* Clean, slightly opaque white */
+    padding: 30px;
+    border-radius: 20px; /* Larger radius for smoother edges */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 400px;
+    margin: 60px auto; /* Center form horizontally and vertically */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  }
+  
+  /* Hover effect on the form */
+  .login_signup_form:hover {
+    transform: translateY(-10px); /* Lift the form on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Title Styling */
+  .login-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  }
+  
+  /* Custom Button Styling */
+  button[type="submit"] {
+    background-color: #000000; /* Dark background for contrast */
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px; /* Rounded button for a modern look */
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Hover effect for the button */
+  button[type="submit"]:hover {
+    background-color: #f4f4f4; /* Light gray background on hover */
+    color: #000000; /* Darker text on hover for contrast */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  /* Button focus state */
+  button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4); /* Soft focus border */
+  }
+  
+  /* Disabled Button Styling */
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Input Field Styles */
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #FF6A13; /* Focus border color */
+    outline: none;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 767px) {
+    .login_signup_form {
+      padding: 20px;
+      max-width: 90%; /* Make the form more fluid on small screens */
+    }
+  
+    .login-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+  
+    button[type="submit"] {
+      padding: 14px 18px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  
+  .container {
+    flex: 1; /* Content takes up available space */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+  }
+  
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content h5 {
+    margin-bottom: 5px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  /* About Section Styling */
+  .About {
+    text-align: center;
+    padding: 15px 0;
+    color: #000000;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+  }
+  
+  .about-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Fixes for Login/Signup Form */
+  @media (max-width: 767px) {
+    .login_signup_form {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 95%;
+    }
+  
+    .login-title {
+      font-size: 1.6rem;
+    }
+  }
+  
